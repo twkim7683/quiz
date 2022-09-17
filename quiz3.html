@@ -1,0 +1,29 @@
+<!--객관식-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1> Q3 </h1>
+	<h2> LCM(24, 30, 36) = ? </h2> 
+	<script>
+		function check( ans ) {
+		var text = document.querySelector('#res').value;
+		if( ans === text ){
+			alert('맞혔습니다!');
+			location.href='quizend.html';
+		}
+		else{
+			alert('틀렸습니다!');
+			location.href='quizstart.html';
+		}
+		}
+	</script>
+	<input type='text' id='res' placeholder='답을 입력하세요.'/>
+	<input type='button' value='확인' onclick="check('360')"/>
+</body>
+
+</html>
