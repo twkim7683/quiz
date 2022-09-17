@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> QUIZ </title>
+		<style> </style>
+	</head>
+	<body>
+		<script>
+			function newQuiz( cnt ) {
+				document.write( cnt + '번 문제 시작합니다' );
+			}
+		</script>
+		<article>
+		<h1> 퀴즈에 오신 것을 환영합니다! </h1>
+		<h2> 문제는 총 10문제로 구성됩니다. </h2>
+		<p style="margin-top:45px;">
+			문제는 어려울 수도 있고 쉬울 수도 있고, 어떤 분야에서 나올지도 모르니까 대충 푸십쇼. + 추가적인 소개글
+		</p>
+		<input type="button" value="START" onclick="
+		//document.querySelector('body').style.backgroundColor='white';
+		document.write('시작하기 <br>');
+		newQuiz(1);
+		document.write('그만두기');
+		">
+		</article>
+	</body>
+</html>
